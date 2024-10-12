@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 300px; margin: auto; margin-top: 100px; }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>登录</h2>
+    <form action="Login" method="post">
+        <label for="username"><b>用户名</b></label>
+        <input type="text" placeholder="输入用户名" name="username" required id="username">
+
+        <label for="password"><b>密码</b></label>
+        <input type="password" placeholder="输入密码" name="password" required id="password">
+
+        <div>
+            <button type="submit">登录</button>
+        </div>
+    </form>
+    <!-- 注册按钮 -->
+    <br>
+    <button onclick="window.location.href='register.html';">注册</button>
+</div>
+
+</body>
+</html>
